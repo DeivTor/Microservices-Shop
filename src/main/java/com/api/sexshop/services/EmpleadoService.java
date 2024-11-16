@@ -1,10 +1,8 @@
 package com.api.sexshop.services;
 import java.util.Optional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.api.sexshop.entities.ClienteEntity;
 import com.api.sexshop.entities.EmpleadoEntity;
 import com.api.sexshop.repositories.EmpleadosRepository;
 import org.springframework.stereotype.Service;

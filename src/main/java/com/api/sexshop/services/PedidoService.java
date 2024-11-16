@@ -1,14 +1,11 @@
 package com.api.sexshop.services;
 
-import com.api.sexshop.entities.ClienteEntity;
-import com.api.sexshop.entities.EmpleadoEntity;
 import com.api.sexshop.entities.PedidoEntity;
 import com.api.sexshop.repositories.PedidosRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
