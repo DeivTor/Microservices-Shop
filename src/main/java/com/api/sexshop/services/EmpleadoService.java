@@ -38,10 +38,10 @@ public class EmpleadoService {
     public String createEmpleado(EmpleadoEntity empleado) {
         empleado.setId(UUID.randomUUID());
         if (empleadosRepository.existsById(empleado.getId())) {
-            return "Cliente ya existe";
+            return "Ese Empleado ya existe";
         }else {
             empleadosRepository.save(empleado);
-            return "Cliente creado con exito";
+            return "Empleado creado con exito";
         }
     }
 
@@ -50,9 +50,9 @@ public class EmpleadoService {
         Optional<EmpleadoEntity> empleadoFound = getEmpleadoById(id);
         if(empleadoFound.isPresent()) {
             empleadosRepository.save(empleado);
-            return "Cliente actualizado con exito";
+            return "Empleado actualizado con exito";
         }else {
-            return "Cliente no encontrado";
+            return "Empleado no encontrado";
         }
     }
 
@@ -61,9 +61,9 @@ public class EmpleadoService {
         Optional<EmpleadoEntity> empleadoFound = getEmpleadoById(id);
         if(empleadoFound.isPresent()) {
             empleadosRepository.delete(empleadoFound.get());
-            return "Cliente eliminado con exito";
+            return "Empleado eliminado con exito";
         }else{
-            return "Cliente no encontrado";
+            return "Empleado no encontrado";
         }
     }
 }
